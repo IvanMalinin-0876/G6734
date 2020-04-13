@@ -1,0 +1,9 @@
+E:\_prj\G6734\G6734\bin\Debug\G6734.exe.config
+E:\_prj\G6734\G6734\bin\Debug\G6734.exe
+E:\_prj\G6734\G6734\bin\Debug\G6734.pdb
+E:\_prj\G6734\G6734\obj\Debug\G6734.csprojAssemblyReference.cache
+E:\_prj\G6734\G6734\obj\Debug\G6734.Form1.resources
+E:\_prj\G6734\G6734\obj\Debug\G6734.Properties.Resources.resources
+E:\_prj\G6734\G6734\obj\Debug\G6734.csproj.GenerateResource.cache
+E:\_prj\G6734\G6734\obj\Debug\G6734.exe
+E:\_prj\G6734\G6734\obj\Debug\G6734.pdb
