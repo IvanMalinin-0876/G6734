@@ -51,9 +51,9 @@ var ProtoBufManager = {
 
 
     decodestring: function(_string) {
-        let newjson;
-        newjson = JSON.parse(Base64.decode(_string));
-
+        let newjson, newbase64;
+        newbase64 = Base64.decode(_string);
+        newjson = JSON.parse(newbase64);
         let vae = "";
         return newjson
     },
@@ -67,7 +67,7 @@ var ProtoBufManager = {
         // {
         //     "Result":1,
         //     "Module":2,
-        //     "Data":  "CnsKICAiUmVzdWx0IjoiT0siLAogICJNb2R1bGUiOiJMT0FEIiwKICAiRGF0YSI6ICBbewogICAgImlkIjoxCiAgfV0KICB9CiA" 
+        //     "Data":  "ewogICJSZXN1bHQiOiJPSyIsCiAgIk1vZHVsZSI6IkxPQUQiLAogICJEYXRhIjogIFt7CiAgICAiaWQiOjEKICB9XQogIH0=" 
         //     }
         //  Data - base64
 
