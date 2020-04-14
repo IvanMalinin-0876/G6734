@@ -1,0 +1,48 @@
+
+syntax = 'proto2';
+
+package Assets.Entities;
+
+message UserItem_Proto {
+
+/*------    [ Both ]    ------*/
+required	int32										Id				= 1;
+required	string										Nick			= 2;	
+required	string                               		Pasw			= 3;
+optional	string 										RName			= 4;
+optional    Assets.Entities.MainInfo_Proto              MainInfo		= 5;
+optional    Assets.Entities.MessUserType_Proto          MessUserType    = 6;
+
+}
+
+message MainInfo_Proto {
+optional	string										RName          = 1;	
+optional	string										FirstName      = 2;	
+optional	string										SecondName     = 3;	
+optional	string										LastName       = 4;	
+optional	string										Type           = 5;	
+optional	int32										Old            = 6;	
+optional	string										Avatar         = 7;	
+optional	Assets.Entities.ContactsType_Proto			ContactsType   = 8;	
+optional	Assets.Entities.LocationType_Proto			LocationType   = 9;	
+
+}
+
+
+message MessUserType_Proto {
+
+    required	int32										Id				= 1;
+}    
+
+message ContactsType_Proto {
+    optional	string										RName        = 1;	
+    optional	string										Phone        = 2;	
+    optional	string										Mail         = 3;	  
+}
+
+message LocationType_Proto {
+    optional	string										RName         = 1;	
+    optional	string										Coutry        = 2;	
+    optional	string										Sity          = 3;	
+    optional	string										PostCode      = 4;	
+}

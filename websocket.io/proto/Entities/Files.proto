@@ -1,0 +1,13 @@
+
+syntax = 'proto2';
+
+package Assets.Entities;
+
+message FileItem_Proto {
+
+/*------    [ Both ]    ------*/
+required	int32										Id				= 1;
+required	string										toIdFileName	= 2;	
+required	string                               		toIdFileCashe	= 3;
+optional	string 										toIdFileType	= 4;
+}

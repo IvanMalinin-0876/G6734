@@ -1,0 +1,17 @@
+{
+    "name": "server_socket_chat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ivan Malinin",
+    "license": "ISC",
+    "dependencies": {
+        "moment": "2.x",
+        "path": "0.x",
+        "protobufjs": "5.x",
+        "ws": "1.x"
+    }
+}

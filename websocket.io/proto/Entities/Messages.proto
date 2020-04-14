@@ -1,0 +1,31 @@
+
+syntax = 'proto2';
+
+package Assets.Entities;
+
+message MessageItem_Proto {
+
+/*------    [ Both ]    ------*/
+required	int32										Id					= 1;
+required	int32										ToUserId			= 2;	
+required	int32                               		FromUserId			= 3;
+optional	string 										Date				= 4;
+optional    string    	                            	Time		    	= 5;
+optional    Assets.Entities.Sender_Proto                SenderId        	= 6;
+optional	Assets.Entities.ReSender_Proto  			ReSenderId          = 7;
+optional	bool                            			isDeleted			= 8;
+optional	string  							    	Text		    	= 9;
+optional	Assets.Entities.Files_Proto	        		Files				= 10;
+}
+
+message Sender_Proto {
+optional	int32										Id      = 1;	
+}
+
+message ReSender_Proto {
+optional	int32										Id      = 1;	
+}
+
+message Files_Proto {
+optional  	int32										Id      = 1;	
+}

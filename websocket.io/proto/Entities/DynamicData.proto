@@ -1,0 +1,14 @@
+syntax = 'proto2';
+
+package Assets.Entities;
+
+import "Messages.proto";
+import "Users.proto";
+import "Files.proto";
+
+message DynamicData_Proto {
+    repeated	Assets.Entities.UserItem_Proto     	        UserItems		    = 1;
+	repeated  	Assets.Entities.MessageItem_Proto		    MessageItems		= 2;
+	repeated	Assets.Entities.FileItem_Proto				FileItems			= 3;
+	
+}

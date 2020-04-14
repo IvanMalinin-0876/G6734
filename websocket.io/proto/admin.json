@@ -1,0 +1,53 @@
+{
+    "UserType": {
+        "Id": 1,
+        "Nick": "admin",
+        "Pasw": "admin1",
+        "RName": "Учетные данные пользователя",
+        "MainInfo": [{
+            "RName": "Информация пользователя",
+            "FirstName": "Ivanov",
+            "SecondName": "Ivan",
+            "LastName": "Ivanovitch",
+            "Type": "male",
+            "Old": 31,
+            "Avatar": "r5t6-g5j6-g5hf",
+            "ContactsType": [],
+            "LocationType": []
+        }],
+        "MessUserType": []
+    },
+
+    "ContactsTypes": [{
+        "RName": "Контактная информация",
+        "Phone": "+79605623667",
+        "Mail": "ivanov.ivan@gimail.com"
+    }],
+
+    "LocationTypes": [{
+        "RName": "Геолокация пользователя",
+        "Coutry": "Russia",
+        "Sity": "Volgograd",
+        "PostCode": "405104"
+    }],
+
+    "MessageType": {
+        "Id": 2,
+        "ToUserId": 2,
+        "FromUserId": 2,
+        "Date": 1,
+        "Time": 1,
+        "SenderId": [],
+        "ReSenderId": [],
+        "Text": "Привет",
+        "Files": []
+    },
+
+    "FileType": {
+        "Id": 1,
+        "toIdFileName": "Hello",
+        "toIdFileCashe": "r6t7-6gb5-gg6t",
+        "toIdFileType": "png"
+    }
+
+}

@@ -1,0 +1,30 @@
+syntax = 'proto2';
+
+package Assets.Entities;
+
+import "DynamicData.proto";
+
+/**********************************************
+ -------------------- Mesg --------------------
+ **********************************************/
+
+enum UserFunction {
+    USER_NONE                                                       = 1;
+    USER_LOG_IN                                                     = 2;
+    USER_GET_DYNAMIC_DATA                                           = 3;
+}
+
+enum UserError {
+	USER_MISSING_DATA                                               = 1;
+    USER_INCORRECT_FUNCTION                                         = 2;
+    USER_ANOTHER_DEVICE_LOG_IN                                      = 3;
+    USER_ALREADY_LOG_IN                                             = 4;
+    USER_NOT_LOG_IN                                                 = 5;
+}
+
+message UserMessage_Proto {
+    required    Assets.Entities.UserFunction        Function        = 1;
+    optional    string                              Login           = 2;
+    optional    Assets.Entities.DynamicData_Proto   DynamicData     = 3;
+    optional    Assets.Entities.UserError           Error           = 4;
+}

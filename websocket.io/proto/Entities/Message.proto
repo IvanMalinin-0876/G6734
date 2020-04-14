@@ -1,0 +1,25 @@
+syntax = 'proto2';
+
+/**********************************************
+ -------------------- Mesg --------------------
+ **********************************************/
+
+enum MessageResult{
+    OK                                  = 1;
+    ERROR                               = 2;
+}
+
+enum MessageModule {
+    NONE                            	= 1;
+	LOAD                               	= 2;                    
+    WRITE                           	= 3;
+    DELETE                           	= 4;   
+    LOGIN                               = 5;
+}
+
+message Message_Proto {
+    optional    MessageResult   Result  = 1;
+    required    MessageModule   Module  = 2;
+    optional    bytes           Data    = 3;
+}
+
